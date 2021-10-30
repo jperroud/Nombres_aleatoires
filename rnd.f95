@@ -5,12 +5,11 @@
 !
 ! Jean-Pierre Perroud,  octobre 2010
 !
-!	mise a jour :   janvier 2012
+!	mise a jour :   janvier 2012- octobre 2021
 !
 !------------------------------------------------------------
 
 program rnd 
-
 
 ! Fonctions  internes
       	intrinsic random_seed, random_number 
