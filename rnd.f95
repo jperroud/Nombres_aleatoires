@@ -3,9 +3,9 @@
 !
 ! Programmation au format libre
 !
-! Jean-Pierre Perroud,  octobre 2010
+! Création 		: 	Jean-Pierre Perroud,  octobre 2010
 !
-!	mise a jour :   janvier 2012- octobre 2021
+! Mises à jour	:	janvier 2012- octobre, novembre 2021
 !
 !------------------------------------------------------------
 
@@ -24,15 +24,15 @@ program rnd
 	call random_seed 
 
 	write (*,*) ' '
-	write (*,*) 'Liste de nombres aléatoires '
-	write (*,*) '----------------------------'	
+	write (*,*) 'Liste de nombres aléatoires :.'
+	write (*,*) '------------------------------'	
 	write (*,*) ' '
 
-      	do i = 1,35 
-      		call random_number(valeur)
+   	do i = 1,35 
+   		call random_number(valeur)
 		valeur2 = 10  * valeur
 		valeur3 = 100 * valeur 
-      		write (*,'(a3,f8.6,f8.4,f8.2)') esp, valeur, valeur2, valeur3
+   		write (*,'(a3,f8.6,f8.4,f8.2)') esp, valeur, valeur2, valeur3
 	enddo 
 	
 	write (*,*) ' '
