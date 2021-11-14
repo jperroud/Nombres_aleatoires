@@ -9,7 +9,7 @@ La compilation se fera alors avec
 
 pour exécuter le programme dans le terminal avec
 
->$ ./rnd.exe
+
 ```
 $ ./rnd.exe
 
@@ -30,7 +30,8 @@ $ ./rnd.exe
    0.380801  3.8080   38.08
    0.827806  8.2781   82.78
    0.572967  5.7297   57.30
-... 
+   ... 
+   ...
 
 ``` 
 
