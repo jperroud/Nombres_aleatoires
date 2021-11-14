@@ -35,6 +35,59 @@ $ ./rnd.exe
 
 ``` 
 
+Pour profiter d'une vue du programme dans un fichier désassemblé
+
+```
+$ gfortran -S rnd rnd.f95
+
+```
+Le résultat se trouvera dans rnd.s
+
+```
+$ cat rnd.s
+        .file   "rnd.f95"
+        .text
+        .section .rdata,"dr"
+.LC0:
+        .ascii "rnd.f95\0"
+.LC1:
+        .ascii " "
+        .align 8
+.LC2:
+        .ascii "Liste de nombres al\303\251atoires :."
+.LC3:
+        .ascii "------------------------------"
+.LC6:
+        .ascii "(a3,f8.6,f8.4,f8.2)"
+        .text
+        .def    MAIN__; .scl    3;      .type   32;     .endef
+        .seh_proc       MAIN__
+MAIN__:
+        pushq   %rbp
+        .seh_pushreg    %rbp
+        subq    $576, %rsp
+        .seh_stackalloc 576
+...
+...
+...
+.LC4:
+        .long   1092616192
+        .align 4
+.LC5:
+        .long   1120403456
+        .ident  "GCC: (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders) 11.2.0"
+        .def    _gfortran_random_seed_i4;       .scl    2;      .type   32;     .endef
+        .def    _gfortran_st_write;     .scl    2;      .type   32;     .endef
+        .def    _gfortran_transfer_character_write;     .scl    2;      .type   32;     .endef
+        .def    _gfortran_st_write_done;        .scl    2;      .type   32;     .endef
+        .def    _gfortran_random_r4;    .scl    2;      .type   32;     .endef
+        .def    _gfortran_transfer_real_write;  .scl    2;      .type   32;     .endef
+        .def    _gfortran_set_args;     .scl    2;      .type   32;     .endef
+        .def    _gfortran_set_options;  .scl    2;      .type   32;     .endef
+
+
+```
+
 ---
 
 _J-P Perroud - octobre, nov 2021_
