@@ -3,7 +3,7 @@
 !
 ! Programmation au format libre
 !
-! Création 		: 	Jean-Pierre Perroud,  octobre 2010
+! Création 	:		Jean-Pierre Perroud,  octobre 2010
 !
 ! Mises à jour	:	janvier 2012- octobre, novembre 2021
 !
@@ -15,7 +15,7 @@ program rnd
       	intrinsic random_seed, random_number 
 
 ! Définition des variables
-      	integer 	:: i 
+      	integer 	:: i, nb = 20 
       	real 		:: valeur, valeur2, valeur3 
       	character	:: esp = ' '
 	
@@ -28,7 +28,7 @@ program rnd
 	write (*,*) '------------------------------'	
 	write (*,*) ' '
 
-   	do i = 1,35 
+   	do i = 1, nb
    		call random_number(valeur)
 		valeur2 = 10  * valeur
 		valeur3 = 100 * valeur 
