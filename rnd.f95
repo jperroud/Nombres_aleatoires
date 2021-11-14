@@ -3,9 +3,9 @@
 !
 ! Programmation au format libre
 !
-! Création 	:		Jean-Pierre Perroud,  octobre 2010
+! Création:		Jean-Pierre Perroud,  octobre 2010
 !
-! Mises à jour	:	janvier 2012- octobre, novembre 2021
+! Mises à jour:	janvier 2012- octobre, novembre 2021
 !
 !------------------------------------------------------------
 
